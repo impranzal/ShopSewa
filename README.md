@@ -403,12 +403,30 @@ git status
 git commit -m "Initial ShopSewa e-commerce application"
 ```
 
-After creating an empty repository on GitHub, connect it and push:
+The project repository is available at:
+
+```text
+https://github.com/impranzal/ShopSewa
+```
+
+To connect a local clone to this repository and push:
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repository>.git
+git remote add origin https://github.com/impranzal/ShopSewa.git
 git push -u origin main
+```
+
+If `origin` is already configured, check it with:
+
+```powershell
+git remote -v
+```
+
+If it points to a different repository, update it with:
+
+```powershell
+git remote set-url origin https://github.com/impranzal/ShopSewa.git
 ```
 
 If a real secret was ever committed before adding the ignore rules, remove it
